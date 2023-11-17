@@ -9,5 +9,13 @@ import { CommonModule } from '@angular/common';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'angular-intro-counter-demo';
+  counter = 0;
+
+  increment(): void {
+    ++this.counter;
+  }
+
+  decreament() : void {
+    --this.counter;
+  }
 }
